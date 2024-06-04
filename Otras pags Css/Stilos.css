@@ -1,0 +1,292 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Main{
+    width: 100%;
+    height: 100vh;
+}
+
+/* BANNER */
+.Banner{
+    animation: Banner 30s infinite linear alternate;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 35em;
+    width: 100%;
+}
+
+@keyframes Banner{
+    0%, 20%{background-image: url(Asteroide.png);
+            background-size: cover;
+            background-position: center center;}
+    25%, 45%{background-image: url(Alien.avif);
+            background-size: cover;
+            background-position: center center;}
+    50%, 70%{background-image: url(Sistema\ solar.jpg);
+            background-size: cover;
+            background-position: center center;}
+    75%, 100%{background-image: url(Spacex.jpg);
+            background-size: cover;
+            background-position: center center;}
+}
+/* FINAL BANNER */
+
+
+/* MENU */
+.Logo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s;
+    z-index: +40;
+}
+
+.Logo img{
+    object-fit: cover;
+    height: 20%;
+}
+
+.Menu{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu a{
+    display: flex;
+    position: relative;
+    font-family: helvetica;
+    padding: 2em 1em;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+/* SCROLL */
+.Logo.abajo{
+    background: rgb(255, 255, 255);
+    width: 50%;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: +40;
+}
+
+.Logo.abajo img{
+    object-fit: cover;
+    height: 132%;
+}
+
+.Logo.abajo .Menu{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo.abajo .Menu a{
+    display: flex;
+    position: relative;
+    font-family: helvetica;
+    padding: 2em 1em;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+/* FINAL SCROLL */
+/* FINAL MENU */
+
+
+/* CUERPO DE PAGINA */
+hr{
+    width: 100%;
+    height: .1em;
+    border: none;
+    margin: 1em auto;
+}
+
+.Todo{
+    width: 100%;
+    height: calc(100vp -14em);
+    background-image: url(Estrellas.webp);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+}
+/* FINAL CUERPO DE PAGINA */
+
+
+/* INFORMACION */
+.Titulo{
+
+   width: 70%;
+   height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.Titulo h1{
+    margin-top: 1%;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    font-family:  Arial Rounded MT;
+}
+
+.Titulo hr{
+    width: 2em;
+    height: 0.25em;
+    background: linear-gradient(90deg, #9059D6, #51D2E6);
+    border: none;
+    border-radius: 1em;
+    margin: 1em auto;
+}
+
+.Informacion{
+
+    width: 40%;
+    height: 100%;
+     align-items: center;
+     justify-content: center;
+     display: flex;
+     flex-direction: column;
+}
+
+.Contenido{
+    width: 100%%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.Contenido p{
+    font-size: 1em;
+    text-align: justify;
+    justify-content: center;
+    color: white;
+    font-family:  Arial Rounded MT;
+}
+/* FINAL INFORMACION */
+
+
+/* IMAGENES */
+.Imagenes{
+    margin: 5em 0;
+    border-radius: 10%;
+    width: 70%;
+    height: 47em;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    border: 3px solid #9059D6;
+}
+
+.Lados{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0.3em 0;
+}
+
+.Imagen{
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.Imagen img{
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+}
+/* FINAL IMAGENES */
+
+/* VIDEOS */
+.Videos{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.Bloques{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.Texto{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5em 0;
+}
+
+.Texto p{
+    font-size: 1em;
+    text-align: justify;
+    justify-content: center;
+    color: white;
+    font-family:  Arial Rounded MT;
+}
+
+.Video{
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.Video video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/* FINAL VIDEOS */
+
+/* PIE DE PAGINA */
+.Pie{
+    background-color: black;
+}
+
+.Pie h3, .Pie a, .Pie p{
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+}
+/* FINAL PIE DE PAGINA */
